@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #5989e1; /* Dark Blue Background */
+            color: #0d071e;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298); /* Glittery Dark Blue */
+            color: white;
+            padding: 50px;
+            text-align: center;
+            background-size: 400% 400%;
+            animation: glitter 5s infinite;
+        }
+
+        @keyframes glitter {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4CAF50;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background-color: #45a049;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 40px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .intro, .skills, .projects, .contact {
+            margin-bottom: 50px;
+        }
+
+        .intro p, .skills p, .projects p, .contact p {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        .skills-list, .projects-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills-list li, .projects-list li {
+            background-color: #fff;
+            padding: 20px;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .projects-list li {
+            width: 300px;
+        }
+
+        .projects-list li img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact input, .contact textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact button {
+            width: 80%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #6eae72;
+        }
+
+        footer {
+            background-color: #121c69;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Profile Image */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Name Styling */
+        .profile-name {
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .profile-title {
+            font-size: 18px;
+            color: #ccc;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Profile Image and Name -->
+    <img src="C:\Users\Success\OneDrive\Desktop\website pictures\download6.png" alt="Your Image" class="profile-img">
+    <h1 class="profile-name">YUVASRI V</h1>
+    <p class="profile-title">Web Developer | Programmer | Designer</p>
+</header>
+
+<!-- Resume Section -->
+<section id="resume" class="resume-section">
+    <h2>My Profile</h2>
+    <p>Check out my resume and see my experience, education, and skills.</p>
+    <!-- Link to your resume (replace 'files/my-resume.pdf' with the actual path to your file) -->
+    <a href="C:\Users\Success\OneDrive\Desktop\CV_2025031019051053.pdf" class="resume-btn" download>Download Resume (PDF)</a>
+</section>
+
+<nav>
+    <a href="#intro">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="https://github.com/yourusername" target="_blank">GitHub</a> <!-- GitHub Link -->
+</nav>
+
+<section id="intro">
+    <h2 class="section-title">About Me</h2>
+    <div class="intro">
+        <p>Hello! I'm Yuvasri, a passionate web developer with experience in front-end and back-end technologies. I love coding and building beautiful, responsive websites. I'm always learning and improving my skills.</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>SQL</li>
+        </ul>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+        <ul class="projects-list">
+            <li>
+                <img src="C:\Users\Success\OneDrive\Desktop\website pictures\download.jpeg" alt="Project 1">
+                <h3>Implementation of Chatbot</h3>
+                <p>A description of the project, its purpose, and technologies used.</p>
+            </li>
+            <li>
+                <img src="C:\Users\Success\OneDrive\Desktop\website pictures\download (1).jpeg" alt="Project 2">
+                <h3>Python Programming</h3>
+                <p>A description of the project, its purpose, and technologies used.</p>
+            </li>
+            <li>
+                <img src="C:\Users\Success\OneDrive\Desktop\website pictures\download.jpeg" alt="Project 3">
+                <h3>Web development</h3>
+                <p>A description of the project, its purpose, and technologies used.</p>
+            </li>
+            <li>
+                <img src="C:\Users\Success\OneDrive\Desktop\website pictures\download (2).jpeg" alt="Project 4">
+                <h3>Data Science</h3>
+                <p>A description of the project, its purpose, and technologies used.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact">
+        <form onsubmit="sendMessage(event)">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Yuvasri. All rights reserved. | <a href="https://github.com/yourusername" target="_blank">GitHub</a></p> <!-- GitHub link in footer -->
+    <p>&copy; 2025 Yuvasri. All rights reserved. | <a href="https://linkedin.com/yourusername" target="_blank">Linkedin</a></p> <!-- Linkedin link in footer -->
+</footer>
+
+
+
+<script>
+    function sendMessage(event) {
+        event.preventDefault();
+        alert("Your message has been sent!");
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+    }
+</script>
+
+</body>
+</html>
